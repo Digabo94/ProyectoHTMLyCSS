@@ -15,7 +15,6 @@
     
 }
 
-
 /*---------------------------------------------------Variables*/
 
 
@@ -56,6 +55,10 @@ nav ul li a{
 
 nav ul li a:hover{ /*En el hover van las acciones que suceden en un boton, link, etc...*/
     color:var(--white-color);
+}
+
+.separador{
+    color: var(--black-color);
 }
 /*---------------------------------------------------------------------------------------Main section*/
 

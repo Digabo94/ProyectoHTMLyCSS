@@ -1,0 +1,43 @@
+:root{ /*El root aplica para todas las demas etiquetas*/
+    --green-color:#7ACC2D;
+    --white-color:white;
+    --black-color:#313337;
+    /* Espaciado */
+    --space:10px;
+    /*Tipografia*/
+    --normal: 12px;
+    /*Box shadow*/
+    --box:0 0 10px #c1bcbc;
+    /*Padding*/
+    --pad: 10px;
+}
+
+body{
+    text-align:center;
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+
+.container_faq{
+    width: 25%;
+    margin: auto;
+}
+
+.faq{
+    box-shadow: var(--box);
+}
+
+.container_faqs h1{
+    font-size: xx-large;
+}
+
+
+
+strong{
+    font-size: x-large;
+}
+
+h5{
+    font-size: larger;
+}
