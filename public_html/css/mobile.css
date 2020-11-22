@@ -1,0 +1,32 @@
+@media (max-width: 600px){ /*La regla del media es que, por debajo de los 600 pixeles active las caracteristicas dadas en este cuerpo*/
+    
+    .products{
+        display:inherit; /*Esto es para que los elementos se acomoden de forma vertical y no horizontal*/
+        height: auto; /*Ya no se requerira de una altura, sino que vaya creciendo conforme cambia el tamanio de la pagina*/
+    }
+    
+    .product{
+        margin-top: auto; /*Con esto va generando su propio margen superior y, esto es para separar la main_section de las cajas*/
+    }
+    
+    .main_section{
+        padding: 4%;
+    }
+    
+    .container_animals{
+        
+        display: inherit;
+        text-align: center;
+        margin-top:50px;
+    }
+    
+    .dog{
+        margin: 0px;
+    }
+    
+    .turtle{
+        margin: 0px;
+    }
+    
+    
+}

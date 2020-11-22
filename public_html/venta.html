@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Brand</title>
+        <meta charset="UTF-8">
+        <!--Aca empezamos con la implementacion de bootstrap
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        -->
+        <link rel="stylesheet" type="text/css" href="css/grid.css"/>
+        <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+        <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+        <link rel="stylesheet" type="text/css" href="css/mobile.css"/>
+        <link rel="stylesheet" type="text/css" href="css/animation.css"/>
+        <script type="text/javascript" src="scripts/funciones.js"></script>
+    </head>
+    <body>
+        <!--Aqui empieza el navbar-->
+        <nav class="fadeInDown">
+            <!--Se crean dos div, uno contendra el logo y otro contendra una lista que tendra las opciones del usuario de la nav bar-->
+            <div class="brand_image">
+                <img src="images/logo.png"/>
+            </div>
+            <div class="nav_options">
+                <ul>
+                    <li>
+                        <a href="faqs.html">Faqs</a>
+                    </li>
+                    <li>
+                        <a href="producto.html">Productos y descripcion</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--Aqui se acaba el navbar-->
+        <!--Aqui iniciaremos creando nuestra linea de productos mediante el grid y las normas establecidas en el grid.css-->
+        <h1 style="margin-left: 200px; font-size: xx-large; text-shadow: 2px 2px;">Producto</h1>
+        <!---------------------------------------------------------Inicio de Formulario Venta-->
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="modulo_pago">
+                        <div class="modulo_pago_images">
+                            <img src="images/gato.jpg" alt="Gatito"/>
+                        </div>
+                        <h3>
+                            Producto 1
+                        </h3>
+                        <p>
+                            Miles de producto hay en el mercado, pero nada como una caja de gatitos.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="modulo_pago">
+                        <!--En action estamos agregando el boton que creamos en nuestra cuenta de paypal para que el cliente nos pueda pagar y depositar el dinero en dicha cuenta-->
+                        <!--Con el method post haremos que se envie la informacion de nuestra forma a la pagina de paypal-->
+                        <form action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UYZX3KA9R6SC8" method="post">
+                            <!--Con el for="name" estamos enlazando el label con el input-->
+                            <label for="name"> Nombre </label>
+                            <br/>
+                            <!--El name en el input es para que podamos enlazar el label-->
+                            <input type="text" placeholder="" name="name" class="data" value=""/>
+                            <br/>
+                            <br/>
+                            <label for="email"> E-mail </label>
+                            <br/>
+                            <input type="text" placeholder="" name="email" class="data" value=""/>
+                            <br/>
+                            <br/>
+                            <label for="phone"> Tel&eacute;fono </label>
+                            <br/>
+                            <input type="text" placeholder="" name="phone" class="data" value=""/>
+                            <br/>
+                            <br/>
+                            <input type="hidden" name="first_name" value="John">
+                            <input type="hidden" name="email" value="610">
+                            <input type="hidden" name="night_phone_a" value="jdoe@zyzzyu.com">
+                            <!--Para poder cambiar el texto de un boton, basta con poner value="" y el texto que queremos que muestre-->
+                            <input type="Submit" class="main_button" name="submit" value="Confirmar pago"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------------------------------------------------Fin de Formulario Venta-->
+        <!---------------------------------------------------------------------------------footer-->
+
+        <footer>
+            <a href="terminos.html">Terminos y condiciones</a>
+            <a href="">Contacto@mail.com</a>
+        </footer>
+    </body>
+</html>

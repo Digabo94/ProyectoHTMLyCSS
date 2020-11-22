@@ -1,0 +1,20 @@
+:root{
+ --black-color: black;    
+ --white-color: white;
+ --green-color: green;
+}
+
+body{
+    background-color: var(--black-color);
+    text-align: center;
+    color: var(--white-color);
+    height: 100vh; /*Con esta propiedad, hacemos que el elemento tenga una altura total de toda la pantalla.*/
+    /*Con los siguientes atributos hacemos que nuestro elemento se centre por toda la pantalla*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_paypal a{
+ color: var(--green-color);
+}

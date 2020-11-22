@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
+/*---------------------------------------------------Variables*/
+:root{ /*El root aplica para todas las demas etiquetas*/
+    --green-color:#7ACC2D;
+    --white-color:white;
+    --black-color:#313337;
+    /* Espaciado */
+    --space:10px;
+    /*Tipografia*/
+    --normal: 12px;
+    /*Box shadow*/
+    --box:0 0 10px #c1bcbc;
+    /*Padding*/
+    --pad: 10px;
+    
+}
+
+
+/*---------------------------------------------------Variables*/
+
+
+html, body{
+    padding: 0px; /*Quitamos el padding de la pagina*/
+    margin: 0px; /*Se quita el margen de la pagina*/
+    font-size: 12px;
+    font-family: 'Xanh Mono', monospace;;
+}
+
+p, labe{
+    font-size: var(--normal);
+}
+
+
+nav{
+    display:flex; /*Con esta propiedad hacemos que los elementos se acumulen de forma horizontal y no vertical*/
+    background-color: var(--green-color);
+    padding: var(--space); /*En este caso le da volumen hacia arriba y hacia abajo*/
+    color: var(--white-color);
+    justify-content: space-between; /*En este caso separa los dos div y uno lo posiciona de lado izquierdo y otro del lado derecho*/
+    align-items: center; /*Hace que los elementos se alineen en el centro vertical*/
+}
+
+nav ul{
+    display: flex; /*Con este display hacemos que nuestra ul muestre sus elementos de forma horizontal y no vertical (uno arriba de otro)*/
+}
+
+nav ul li{
+    padding-left: 20px;
+    list-style: none; /*Le quita los estilos a la lista, en este caso le quita las bolitasdel lado izquierdo del texto de las opciones*/
+}
+
+nav ul li a{
+    color:gray;
+    text-decoration: none; /*Con text decoreation none le quitamos el caracteristico subrayado de los links*/
+}
+
+nav ul li a:hover{ /*En el hover van las acciones que suceden en un boton, link, etc...*/
+    color:var(--white-color);
+}
+/*---------------------------------------------------------------------------------------Main section*/
+
+.container{
+    align-items: center;
+}
+
+.main_section{
+    padding: 15%;
+    text-align: center;
+}
+
+.products{
+    background-image:url("../images/elipse.png");
+    height: 10px;
+    background-size: cover; /*Con esta propiedad se evita que la imagen se recargue hacia un lado y ocupara el tamanio justo de la pantalla*/
+    background-position: center top;
+    padding: 0px;
+    display:flex;
+    justify-content: center;
+
+}
+
+.product{
+    padding:10px;
+    margin-top: -160px;
+}
+
+.product .content{ /*Aqui hacemos que las propiedades afecten a ambos*/
+    background-color: var(--white-color);
+    padding: 20px; 
+    box-shadow: var(--box); /*Con esta propiedad creas una sombra alrededor de los elementos, los primeros dos 0 son 
+                                 coordenadas X Y, los 10px es lo que se distribuira mas alla del borde y al final el color de la sombra*/
+}
+
+
+.img_content{
+    text-align: center;
+}
+
+.main_button{
+    background-color: var(--green-color);
+    width: 100%;
+    padding: 5px 20px 5px 20px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight:  bold;
+    color:var(--white-color);
+    border: 0;
+    text-decoration: none;
+    cursor: pointer; /*Con esta propiedad hace que el cursos se convierta en una manita cuando pasa por el boton*/
+    border-radius: 2px; /*Crea un borde en las esquinas del boton*/
+}
+
+.main_button:hover{
+    background-color: #5e9e22; /*Se toma otro color verde para que cuando se pase el mouse encima este tome otra tonalidad*/
+}
+
+/*------------------------------------------------------------------------------Animales*/
+
+.container_animals{
+    display: flex;
+    margin-top: 300px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.dog{
+    margin-right:150px;
+}
+
+.turtle{
+    margin-left: 150px;
+}
+/*------------------------------------------------------------------------------Venta*/
+.modulo_pago{
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--pad);
+}
+
+.modulo_pago_images{
+    max-width: 200px; /*Cuando una imgagen este muy grande se puede utilizar max width y max height para limitar su tamanio*/
+    max-height: 200px;
+    margin: auto; /*La imagen tenia un margen al lado derecho y por ello no se centraba, con esta propiedad distribuye el margen por todos sus lados.*/
+}
+
+.data{
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid var(--black-color);
+    height: 35px;
+    box-sizing: border-box; /*Con este elemento le decimos que tome como referencia el elemento que lo contiene para tomar el width 100%*/
+}
+/*------------------------------------------------------------------------------footer*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #202020;
+    padding: 15px 5px;
+    text-decoration: none;
+    margin-top: 35px;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+a:hover{
+    color:#A8A8A8;
+}
